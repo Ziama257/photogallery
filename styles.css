@@ -1,0 +1,276 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 485px;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    width: 485px;
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+    color: #007d7b;
+    text-transform: uppercase;
+    font-size: 3em;
+    /* white-space: nowrap; */
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.25em;
+}
+
+figcaption,
+label,
+input {
+    font-size: small;
+    text-transform: uppercase;
+}
+
+::placeholder {
+
+    color: #007d7b;
+    font-weight: bold;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+header nav {
+    background-color: black;
+    width: 485px;
+    height: 75px;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 7px;
+    border: 2px solid white;
+    background-color: black;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+
+main {
+    display: grid
+}
+
+#about {
+    padding: 0px 10px 10px 10px;
+}
+
+#gallery,
+#contact {
+    display: grid;
+    padding: 0px 15px 10px 15px;
+}
+
+h2+p {
+
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#contact p {
+    width: 350px;
+    text-align: center;
+}
+
+#chile figcaption,
+#hawaii figcaption,
+#moab-desert figcaption {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    color: white;
+}
+
+#guatemala figcaption,
+#wyoming figcaption {
+    text-align: center;
+    position: relative;
+    bottom: 270px;
+    color: white;
+}
+
+#iran figcaption,
+#ireland figcaption {
+    text-align: center;
+    position: relative;
+    bottom: 622px;
+    color: black;
+}
+
+#italy figcaption {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    color: black;
+}
+
+#rocky-mountains figcaption,
+#switzerland figcaption,
+#uk figcaption,
+#usa figcaption {
+    text-align: center;
+    position: relative;
+    bottom: 275px;
+    color: black;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#contact h3 {
+    visibility: hidden;
+}
+
+#contact form input[type="text"] {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-left: 10px;
+}
+
+form #submit {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #007d7b;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+}
+
+@media screen and (min-width:880px) {
+
+    body,
+    header,
+    main,
+    nav {
+        width: 880px !important;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        margin-left: 0;
+    }
+
+    #contact form input[type="text"] {
+        width: 800px;
+    }
+
+    form #submit {
+        width: 750px;
+        margin-left: 30px;
+    }
+
+    #contact p {
+        width: 880px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+
+    body,
+    header,
+    main,
+    nav {
+        width: 1300px !important;
+    }
+    nav ul {
+        display: flex;
+        position: absolute;
+        right: 25px;
+        align-self: center;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: -6.5px;
+    }
+
+    #contact form input[type="text"] {
+        width: 1100px;
+    }
+
+    form #submit {
+        width: 1000px;
+        margin-left: 50px;
+    }
+
+    #contact p {
+        width: 1300px;
+    }
+}
